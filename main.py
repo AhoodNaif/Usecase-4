@@ -2,8 +2,8 @@ import joblib
 
 from fastapi import FastAPI, HTTPException
 app = FastAPI()
-model = joblib.load(r"C:\Users\ohoud\OneDrive\Desktop\Usecase-4\ML\SL\Classification\knn_model.joblib")
-scaler = joblib.load(r"C:\Users\ohoud\OneDrive\Desktop\Usecase-4\ML\SL\Classification\scaler.joblib")
+model = joblib.load(r"ML/SL/Classification/knn_model.joblib")
+scaler = joblib.load(r"ML/SL/Classification/scaler.joblib")
  # GET request
 @app.get("/")
 def read_root():
